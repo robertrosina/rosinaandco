@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bookings &amp; Enquiries | Rosina &amp; Co</title>
+  <meta name="description" content="Check Rosina & Co availability for trio, duo and solo bookings across Sydney, the Hunter Valley and NSW.">
+  <meta name="theme-color" content="#11130f">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="contact-page">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Rosina and Co — home">
+      <span class="brand-copy"><strong>Rosina &amp; Co</strong><small>Live music · NSW</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="index.html#about">The act</a>
+      <a href="index.html#listen">Performance samples</a>
+      <a href="index.html#sets">Example sets</a>
+      <a href="index.html#packages">Booking</a>
+      <a class="nav-cta" href="contact.html" aria-current="page">Check a date <span aria-hidden="true">↗</span></a>
+    </nav>
+    <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile navigation" aria-hidden="true">
+    <a href="index.html#about">The act</a>
+    <a href="index.html#listen">Performance samples</a>
+    <a href="index.html#sets">Example sets</a>
+    <a href="index.html#packages">Booking</a>
+    <a class="mobile-nav-cta" href="contact.html" aria-current="page">Check a date <span aria-hidden="true">↗</span></a>
+  </nav>
+
+  <main id="main-content">
+    <section class="contact-hero page-photo-hero">
+      <img src="assets/images/rosina-co-live-wide.png" alt="Rosina and Co performing live" fetchpriority="high">
+      <div class="page-photo-shade"></div>
+      <div class="page-hero-copy">
+        <p class="eyebrow">Bookings &amp; enquiries</p>
+        <h1>Tell me the date.<br><em>I’ll help shape the music.</em></h1>
+        <p>Send the essentials below. Robert will confirm availability and recommend the right Rosina &amp; Co lineup for the room, timing and occasion.</p>
+      </div>
+    </section>
+
+    <section class="section enquiry-section">
+      <div class="enquiry-intro reveal">
+        <p class="eyebrow ink">Start an enquiry</p>
+        <h2>A few details are enough.</h2>
+        <p>Exact timings can follow later. Begin with what you know and Robert can help settle the rest.</p>
+        <div class="direct-contact">
+          <span>Prefer to write directly?</span>
+          <a href="mailto:robertrosina@outlook.com.au">robertrosina@outlook.com.au <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+
+      <form class="enquiry-form reveal" id="enquiryForm" action="mailto:robertrosina@outlook.com.au" method="post" enctype="text/plain">
+        <div class="form-row">
+          <label for="name">Your name <span>*</span></label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Your email <span>*</span></label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="form-grid">
+          <div class="form-row">
+            <label for="date">Event date</label>
+            <input id="date" name="date" type="date">
+          </div>
+          <div class="form-row">
+            <label for="location">Suburb or location <span>*</span></label>
+            <input id="location" name="location" type="text" autocomplete="address-level2" required placeholder="e.g. Pokolbin">
+          </div>
+        </div>
+        <div class="form-grid">
+          <div class="form-row">
+            <label for="occasion">Occasion</label>
+            <select id="occasion" name="occasion">
+              <option value="">Choose one</option>
+              <option>Pub, club or bar</option>
+              <option>Winery or brewery</option>
+              <option>Themed or heritage venue</option>
+              <option>Wedding</option>
+              <option>Private function</option>
+              <option>Corporate event</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="format">Format</label>
+            <select id="format" name="format">
+              <option value="">Open to advice</option>
+              <option>Rosina &amp; Co — complete trio</option>
+              <option>The Rosinas — Robert &amp; Melissa</option>
+              <option>Rob &amp; Danny — vocal and guitar duo</option>
+              <option>Robert Rosina — solo</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-grid">
+          <div class="form-row">
+            <label for="sets">Booking length</label>
+            <select id="sets" name="sets">
+              <option value="">Open to advice</option>
+              <option>Single set</option>
+              <option>Two sets</option>
+              <option>Three sets</option>
+              <option>Four sets</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="times">Approximate times</label>
+            <input id="times" name="times" type="text" placeholder="e.g. 6:00–9:00 pm">
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="message">Anything else?</label>
+          <textarea id="message" name="message" rows="5" placeholder="Venue name, audience size, preferred styles, access details or any questions"></textarea>
+        </div>
+        <button class="button button-dark form-submit" type="submit">Create email enquiry <span aria-hidden="true">↗</span></button>
+        <p class="form-note">This opens your email app with the enquiry details filled in. The website itself stores no form data.</p>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="booking-summary">
+      <div class="summary-card reveal">
+        <span>From</span><strong>$500</strong><p>Quotes vary with date, location, duration and format.</p>
+      </div>
+      <div class="summary-card reveal">
+        <span>Coverage</span><strong>Sydney + Hunter</strong><p>Travel is available throughout New South Wales.</p>
+      </div>
+      <div class="summary-card reveal">
+        <span>Format</span><strong>Solo, duo or trio</strong><p>One to four sets, shaped around the event.</p>
+      </div>
+      <div class="summary-card reveal">
+        <span>Equipment</span><strong>PA supplied</strong><p>Allow roughly 2 × 2 metres and access to power.</p>
+      </div>
+    </section>
+
+    <section class="section faq-section">
+      <div class="faq-heading reveal">
+        <p class="eyebrow ink">Before you enquire</p>
+        <h2>Useful answers.</h2>
+      </div>
+      <div class="faq-list reveal">
+        <details>
+          <summary>Which booking length should I choose?<span aria-hidden="true">+</span></summary>
+          <p>A single set suits a focused feature or cocktail hour. Two sets serve shorter venue and private bookings. Three sets provide the full upbeat arc. Four sets suit extended events and can include the dedicated jazz and swing set.</p>
+        </details>
+        <details>
+          <summary>Can the music stay quieter early in the event?<span aria-hidden="true">+</span></summary>
+          <p>Yes. Acoustic songs and full-production arrangements are interspersed throughout the show, and the balance can be shaped around the room.</p>
+        </details>
+        <details>
+          <summary>What does the venue need to provide?<span aria-hidden="true">+</span></summary>
+          <p>Allow approximately 2 × 2 metres, access to standard power and a safe performance area. Outdoor bookings need adequate cover from sun, rain and weather.</p>
+        </details>
+        <details>
+          <summary>Can Robert travel beyond Sydney and the Hunter Valley?<span aria-hidden="true">+</span></summary>
+          <p>Yes. Bookings are available across NSW, with travel included in the tailored quote.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="contact-closing">
+      <p class="eyebrow">Hear the show first</p>
+      <h2>Ten short samples.<br>One broad repertoire.</h2>
+      <div><a class="button button-light" href="index.html#listen">Listen now <span aria-hidden="true">→</span></a><a class="text-link light-link" href="assets/downloads/rosina-and-co-songbook.pdf" download>Download the songbook <span aria-hidden="true">↓</span></a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <div><strong>Rosina &amp; Co</strong><span>Solo · duo · trio · live music across NSW</span></div>
+    </div>
+    <div class="footer-links">
+      <a href="index.html#about">The act</a><a href="index.html#listen">Listen</a><a href="index.html#sets">Example sets</a><a href="assets/downloads/rosina-and-co-songbook.pdf" download>Songbook PDF</a><a href="contact.html">Enquire</a>
+    </div>
+    <div class="footer-contact">
+      <a href="mailto:robertrosina@outlook.com.au">robertrosina@outlook.com.au</a>
+      <span>© <span data-year>2026</span> Robert Rosina</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
