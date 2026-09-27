@@ -1,0 +1,7 @@
+{
+  "name": "robert-rosina-live-music",
+  "private": true,
+  "scripts": {
+    "build": "node build-static.mjs"
+  }
+}
